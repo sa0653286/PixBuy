@@ -1,18 +1,120 @@
-<HTML>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-  <title>ChatFlow</title>
-  </head>
-  <body>
-  <div class="center-box">
-    <h1>Welcome to PixBuy</h1>
-    <p>✨ Handmade Skincare Products <br> 
-🚚 Pan India Shipping <br> 
-📩 DM to Order or Click Below 👇</p>
-    <div class="btn-group">
-      <a href="https://www.instagram.com/pixb.uy?igsh=MW40dWFnM2xpd2dvMw==" class="btn">PixB.uy</a>
-      <a href="signup.html" class="btn">Sign Up</a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixBuy Skincare</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Using Inter font as default */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Light background */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- Main Content Card -->
+    <div class="w-full max-w-sm bg-white p-8 rounded-3xl shadow-2xl transition-all duration-300 hover:shadow-xl">
+
+        <!-- Header and Branding -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-extrabold text-pink-600 mb-2">PixBuy</h1>
+            <p class="text-gray-500 text-lg font-medium">✨ Handmade Skincare Essentials</p>
+        </header>
+
+        <!-- Product Features/Motto -->
+        <div class="space-y-4 text-center mb-8">
+            <p class="flex items-center justify-center text-gray-700">
+                <span class="text-2xl mr-2">🌿</span> Natural Ingredients, Real Results
+            </p>
+            <p class="flex items-center justify-center text-gray-700">
+                <span class="text-2xl mr-2">🚚</span> Pan India Shipping Available
+            </p>
+            <p class="flex items-center justify-center text-gray-700">
+                <span class="text-2xl mr-2">💖</span> Made with Love
+            </p>
+        </div>
+        
+        <!-- Call to Action Group -->
+        <div class="flex flex-col space-y-4">
+            
+            <!-- Primary CTA: Explore Products (New 'Join' focus) -->
+            <!-- Use a vibrant color for the main goal -->
+            <a href="#" class="btn-primary">
+                Explore Our Products
+            </a>
+            
+            <!-- Secondary CTA: Instagram (Original link) -->
+            <a href="https://www.instagram.com/pixb.uy?igsh=MW40dWFnM2xpd2dvMw==" 
+               class="btn-secondary">
+                <span class="text-xl mr-2">📸</span> Follow Us on Instagram
+            </a>
+        </div>
+
+        <!-- Footer/Contact Note -->
+        <p class="text-center text-sm text-gray-500 mt-8">
+            Questions? DM us on Instagram or find us via the links above!
+        </p>
+
     </div>
-  </div>
-  </body>
-</HTML>
+
+    <!-- Custom Tailwind Button Styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-pink': '#ec4899', /* Tailwind pink-500 */
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Styling for the Primary Button */
+        .btn-primary {
+            display: block;
+            width: 100%;
+            padding: 1rem 1.5rem;
+            text-align: center;
+            font-weight: 700;
+            color: white;
+            background-color: #ec4899; /* Pink */
+            border-radius: 1rem; /* Large rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(236, 72, 153, 0.4), 0 4px 6px -2px rgba(236, 72, 153, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 20px -5px rgba(236, 72, 153, 0.5), 0 10px 10px -5px rgba(236, 72, 153, 0.3);
+        }
+
+        /* Styling for the Secondary Button */
+        .btn-secondary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 1rem 1.5rem;
+            text-align: center;
+            font-weight: 600;
+            color: #ec4899; /* Pink text */
+            background-color: #fce7f3; /* Pink-100 background */
+            border-radius: 1rem;
+            border: 2px solid #f9a8d4; /* Pink-300 border */
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background-color: #fbcfe8; /* Pink-200 hover */
+        }
+    </style>
+
+</body>
+</html>
+
